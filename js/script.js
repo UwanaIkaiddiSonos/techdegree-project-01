@@ -12,34 +12,35 @@ project 1 - A Random Quote Generator
 ***/
 const quotes = [
   {
-    quote: "quote",
-    source: "source",
-    citation: "citation",
-    year: "year"
+    quote: "Education is an admirable thing, but it is well to remember from time to time that nothing that is worth knowing can be taught."
+    ,
+    source: "Oscar Wilde",
+    citation: "A Few Maxims for the Instruction of the Over-Educated",
+    year: 1894
   },
   {
-    quote: " ",
-    source: " ",
-    citation: " ",
-    year: " "
+    quote: "Art is the only serious thing in the world. And the artist is the only person who is never serious.",
+    source: "Oscar Wilde",
+    citation: "A Few Maxims for the Instruction of the Over-Educated",
+    year: 1894
   },
   {
-    quote: " ",
-    source: " ",
-    citation: " ",
-    year: " "
+    quote: "Experience is the name everyone gives to their mistakes.",
+    source: "Oscar Wilde",
+    citation: "The Nihilists",
+    year: 1883
   },
   {
-    quote: " ",
-    source: " ",
-    citation: " ",
-    year: " "
+    quote: "Most people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation.",
+    source: "Oscar Wilde",
+    citation: "De Profundis",
+    year: 1897
   },
   {
-    quote: " ",
-    source: " ",
-    citation: " ",
-    year: " "
+    quote: "It is absurd to divide people into good and bad. People are either charming or tedious.",
+    source: "Oscar Wilde",
+    citation: "Lady Windermere's Fan",
+    year: 1892
   }
 ];
 
