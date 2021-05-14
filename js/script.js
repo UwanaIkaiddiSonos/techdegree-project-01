@@ -46,6 +46,41 @@ const quotes = [
     citation: "Lady Windermere's Fan",
     year: 1892,
     tags: "People"
+  },
+  {
+    quote: "Life imitates art far more than art imitates Life.",
+    source: "Oscar Wilde",
+    citation: "The Decay of Lying",
+    year: 1889,
+    tags: "Life"
+  },
+  {
+    quote: "Anybody can make history. Only a great man can write it.",
+    source: "Oscar Wilde",
+    citation: "The Critic as Artist",
+    year: 1891,
+    tags: "History"
+  },
+  {
+    quote: "To live is the rarest thing in the world. Most people exist, that is all.",
+    source: "Oscar Wilde",
+    citation: "The Soul of Man Under Socialism",
+    year: 1891,
+    tags: "Life"
+  },
+  {
+    quote: "Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth.",
+    source: "Oscar Wilde",
+    citation: "The Critic as Artist",
+    year: 1891,
+    tags: "Truth"
+  },
+  {
+    quote: "One should always be a little improbable.",
+    source: "Oscar Wilde",
+    citation: "Phrases and Philosophies for the Use of the Young",
+    year: 1894,
+    tags: "Self"
   }
 ];
 
@@ -84,9 +119,9 @@ function printQuote() {
  * `randomizeColor` function
 ***/
 function randomizeColor() {
-  let red = Math.floor(Math.random() * 256);
-  let green = Math.floor(Math.random() * (256-50) + 50);
-  let blue = Math.floor(Math.random() * 256);
+  let red = Math.floor(Math.random() * 250);
+  let green = Math.floor(Math.random() * 250);
+  let blue = Math.floor(Math.random() * 250);
   let backgroundColor = `rgb(${red}, ${green}, ${blue})`;
   return backgroundColor;
 };
@@ -95,7 +130,7 @@ function randomizeColor() {
 setInterval(function() {
   document.getElementById('quote-box').innerHTML = printQuote();
   document.body.style.background = randomizeColor();
-}, 5000); 
+}, 10000); 
 
 /***
  * click event listener for the print quote button
