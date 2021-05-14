@@ -6,6 +6,7 @@ project 1 - A Random Quote Generator
 
 /*** 
  * An array of "quote" objects.
+ * All quotes found on https://en.wikiquote.org/wiki/Oscar_Wilde
  * @property {string} quote -  A line of text or speech.
  * @property {string} source -  Who produced the quote.  
  * @property {string} citation -  Where the quote was written/spoken.
@@ -102,8 +103,8 @@ function getRandomQuote() {
 function printQuote() {
   let randomQuote = getRandomQuote();
   let htmlString = `
-  <p class="quote"> ${randomQuote.quote} </p>
-  <p class="source"> ${randomQuote.source} 
+  <p class="quote">${randomQuote.quote}</p>
+  <p class="source">${randomQuote.source} 
   `;
   if (randomQuote.citation) {
     htmlString += `<span class="citation">${randomQuote.citation}</span>`;
@@ -117,7 +118,6 @@ function printQuote() {
   htmlString += `</p>`;
   document.getElementById('quote-box').innerHTML = htmlString;
   document.body.style.background = randomizeColor();
-  //return htmlString;
 };
 
 /***
