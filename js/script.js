@@ -49,14 +49,22 @@ const quotes = [
 ***/
 function getRandomQuote() {
   let randomNumber = (Math.floor(Math.random() * quotes.length - 1) + 1);
-  console.log(quotes[randomNumber]['quote']);
-  return quotes[randomNumber]['quote'];
+  return quotes[randomNumber];
 };
 
 /***
  * `printQuote` function
 ***/
-
+function printQuote() {
+  let randomQuote = getRandomQuote();
+  console.log(randomQuote);
+  let htmlString = `
+  <p class="quote"> ${randomQuote.quote} </p>
+  <p class="source"> ${randomQuote.source} </p>
+  `;
+  console.log(`${randomQuote.quote}/${randomQuote.source}`);
+};
+printQuote();
 
 /***
  * click event listener for the print quote button
