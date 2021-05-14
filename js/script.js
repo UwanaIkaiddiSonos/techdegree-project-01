@@ -73,6 +73,9 @@ function printQuote() {
   if (randomQuote.year) {
     htmlString += `<span class="year">${randomQuote.year}</span>`;
   };
+  if (randomQuote.tags) {
+    htmlString += `<br><br><p><strong>Tags:</strong> ${randomQuote.tags}</p>`;
+  };
   htmlString += `</p>`;
   return htmlString;
 };
