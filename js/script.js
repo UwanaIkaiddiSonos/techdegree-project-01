@@ -80,7 +80,22 @@ function printQuote() {
   return htmlString;
 };
 
-document.getElementById('quote-box').innerHTML = printQuote(); 
+/***
+ * `randomizeColor` function
+***/
+function randomizeColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * (256-50) + 50);
+  let blue = Math.floor(Math.random() * 256);
+  let backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  return backgroundColor;
+};
+
+
+setInterval(function() {
+  document.getElementById('quote-box').innerHTML = printQuote();
+  document.body.style.background = randomizeColor();
+}, 5000); 
 
 /***
  * click event listener for the print quote button
