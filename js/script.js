@@ -16,31 +16,36 @@ const quotes = [
     ,
     source: "Oscar Wilde",
     citation: "A Few Maxims for the Instruction of the Over-Educated",
-    year: 1894
+    year: 1894,
+    tags: "Education"
   },
   {
     quote: "Art is the only serious thing in the world. And the artist is the only person who is never serious.",
     source: "Oscar Wilde",
     citation: "A Few Maxims for the Instruction of the Over-Educated",
-    year: 1894
+    year: 1894,
+    tags: "Art"
   },
   {
     quote: "Experience is the name everyone gives to their mistakes.",
     source: "Oscar Wilde",
     citation: "The Nihilists",
-    year: 1883
+    year: 1883,
+    tags: "Experience"
   },
   {
     quote: "Most people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation.",
     source: "Oscar Wilde",
     citation: "De Profundis",
-    year: 1897
+    year: 1897,
+    tags: "People"
   },
   {
     quote: "It is absurd to divide people into good and bad. People are either charming or tedious.",
     source: "Oscar Wilde",
     citation: "Lady Windermere's Fan",
-    year: 1892
+    year: 1892,
+    tags: "People"
   }
 ];
 
