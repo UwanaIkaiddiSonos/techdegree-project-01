@@ -115,7 +115,9 @@ function printQuote() {
     htmlString += `<br><br><p><strong>Tag:</strong> ${randomQuote.tag}</p>`;
   };
   htmlString += `</p>`;
-  return htmlString;
+  document.getElementById('quote-box').innerHTML = htmlString;
+  document.body.style.background = randomizeColor();
+  //return htmlString;
 };
 
 /***
@@ -137,8 +139,7 @@ function randomizeColor() {
  * 2. Randomize the color of the page background.
  ***/
 setInterval(function() {
-  document.getElementById('quote-box').innerHTML = printQuote();
-  document.body.style.background = randomizeColor();
+  printQuote();
 }, 10000); 
 
 /***
