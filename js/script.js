@@ -57,14 +57,21 @@ function getRandomQuote() {
 ***/
 function printQuote() {
   let randomQuote = getRandomQuote();
-  console.log(randomQuote);
   let htmlString = `
   <p class="quote"> ${randomQuote.quote} </p>
-  <p class="source"> ${randomQuote.source} </p>
+  <p class="source"> ${randomQuote.source} 
   `;
-  console.log(`${randomQuote.quote}/${randomQuote.source}`);
+  if (randomQuote.citation) {
+    htmlString += `<span class="citation">${randomQuote.citation}</span>`;
+  };
+  if (randomQuote.year) {
+    htmlString += `<span class="year">${randomQuote.year}</span>`;
+  };
+  htmlString += `</p>`;
+  return htmlString;
 };
-printQuote();
+
+document.getElementById('quote-box').innerHTML = printQuote(); 
 
 /***
  * click event listener for the print quote button
